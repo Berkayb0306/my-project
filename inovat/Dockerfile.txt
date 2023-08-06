@@ -1,0 +1,14 @@
+FROM wordpress:latest
+
+LABEL maintainer="Berkay Soysal"
+
+RUN rm -rf /var/www/html/wp-content/themes/*
+RUN rm -rf /var/www/html/wp-content/plugins/*
+COPY my-theme/ /var/www/html/wp-content/themes/
+COPY my-plugin/ /var/www/html/wp-content/plugins/
+
+VOLUME /var/lib/mysql
+
+EXPOSE 80
+
+CMD ["apache2-foreground"]

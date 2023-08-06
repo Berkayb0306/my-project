@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Berkay_1999
+      MYSQL_DATABASE: wpinovat
+      MYSQL_USER: berkayb0306
+      MYSQL_PASSWORD: berkay19
+
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    ports:
+      - "8000:80"
+    volumes:
+      - wp_data:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: wpinovat
+      WORDPRESS_DB_USER: berkayb0306
+      WORDPRESS_DB_PASSWORD: berkay19
+
+volumes:
+  db_data:
+  wp_data:
