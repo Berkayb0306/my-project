@@ -9,10 +9,10 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link href="/">Anasayfa</Link>
+            <Link href="http://localhost:3000/home">Anasayfa</Link>
           </li>
           <li>
-            <Link href="/about">Hakkımızda</Link>
+            <Link href="http://localhost:3000/info">Hakkımızda</Link>
           </li>
           <li>
             <Link href="/about">Çözümler</Link>

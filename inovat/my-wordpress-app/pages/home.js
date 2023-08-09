@@ -3,7 +3,56 @@ import axios from 'axios';
 import BrandLogos from './BrandLogos1';
 import SlideShow from './SlideShow';
 import Header from './Header';
-function Home({ post1, post2, post3, post4,post5 }) {
+function CombinedPosts({ post6, post7, post8 }) {
+  const combinedContainerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: '20px',
+  };
+  const postStyle6 = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    textAlign: 'center',
+    color: '#479d58',
+    fontSize: '18px',
+    width: '300px',
+    padding: '30px',
+    backgroundColor: '#fafafa',
+    
+    
+    marginBottom: '20px'
+  }
+
+  const imageStyle6 = {
+    width: '250px',
+    height: '250px', 
+    
+    marginBottom: '80px',
+  };
+
+  return (
+    <div style={combinedContainerStyle}>
+      <div style={postStyle6}>
+        <img src="/images/b1.jpg" alt="b1" style={imageStyle6} />
+        <div dangerouslySetInnerHTML={{ __html: post6.content.rendered }} />
+      </div>
+
+      <div style={postStyle6}>
+        <img src="/images/b2.jpg" alt="b2" style={imageStyle6} />
+        <div dangerouslySetInnerHTML={{ __html: post7.content.rendered }} />
+      </div>
+
+      <div style={postStyle6}>
+        <img src="/images/b3.jpg" alt="b3" style={imageStyle6} />
+        <div dangerouslySetInnerHTML={{ __html: post8.content.rendered }} />
+      </div>
+    </div>
+  );
+}
+
+function Home({ post1, post2, post3, post4,post6,post7,post8 }) {
   const containerStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -68,6 +117,28 @@ function Home({ post1, post2, post3, post4,post5 }) {
     border: '2px solid rgb(37, 196, 37)',
     borderRadius: '50px',
     marginBottom: '20px',
+  };
+
+  const postStyle6 = {
+    color: 'white',
+    fontSize: '18px',
+    width: '800px',
+    padding: '30px',
+    backgroundColor: 'rgb(29, 135, 32, 1)',
+    border: '2px solid rgb(37, 196, 37)',
+    borderRadius: '50px',
+    marginBottom: '20px',
+    display : 'flex',
+    justifyContent:'space-around'
+    
+
+  };
+
+  const imageStyle6 = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
   };
 
   const imageStyle2 = {
@@ -195,7 +266,17 @@ function Home({ post1, post2, post3, post4,post5 }) {
         </div>
       </div>
     </div>
+    <div style={{ height: '100px' }}></div>
+       <CombinedPosts post6={post6} post7={post7} post8={post8} />
+       
+
   </div>
+
+  
+    
+  
+  
+  
   );
 }
 
@@ -214,7 +295,16 @@ export async function getServerSideProps(context) {
     const response4 = await axios.get('http://localhost:8000/wp-json/wp/v2/posts/41');
     const post4 = response4.data;
 
-    return { props: { post1, post2, post3, post4,} };
+    const response6 = await axios.get('http://localhost:8000/wp-json/wp/v2/posts/47');
+    const post6 = response6.data;
+
+    const response7 = await axios.get('http://localhost:8000/wp-json/wp/v2/posts/56');
+    const post7 = response7.data;
+
+    const response8 = await axios.get('http://localhost:8000/wp-json/wp/v2/posts/60');
+    const post8 = response8.data;
+
+    return { props: { post1, post2, post3, post4,post6,post7,post8} };
   }
   
 
