@@ -161,7 +161,7 @@ function Home({ post1, post2, post3, post4,post6,post7,post8 }) {
   
   
   const images = [
-    '/images/slider1.jpeg',
+    '/images/slider1.jpg',
     '/images/slider2.jpg',
     '/images/slider3.jpg',
     

@@ -15,13 +15,13 @@ const Header = () => {
             <Link href="http://localhost:3000/info">Hakkımızda</Link>
           </li>
           <li>
-            <Link href="/about">Çözümler</Link>
+            <Link href="http://localhost:3000/solutions">Çözümler</Link>
           </li>
           <li>
             <Link href="/about">Sürdürülebirlik</Link>
           </li>
           <li>
-            <Link href="/about">İletişim</Link>
+            <Link href="http://localhost:3000/contact">İletişim</Link>
           </li>
           {}
         </ul>

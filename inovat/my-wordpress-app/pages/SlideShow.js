@@ -6,7 +6,7 @@ const SlideShow = ({ images }) => {
   const sliderStyle = {
     width: '1500px', 
     maxWidth: '1800px', 
-    margin: '0 auto', 
+    margin: ' 0 auto', 
   };
 
   const slideContentStyle = {
@@ -23,6 +23,7 @@ const SlideShow = ({ images }) => {
 
   return (
     <div style={sliderStyle}>
+      
       <AwesomeSlider
         play={true}
         cancelOnInteraction={false}
