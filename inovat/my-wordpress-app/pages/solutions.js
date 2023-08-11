@@ -122,7 +122,7 @@ function Home({post1,post2,post3,post4,post5,post6,post7,post8,post9}) {
 
       <div style={{
     position:'absolute',
-    right:'600px',
+    right:'550px',
     top:'-150px',
     color: 'green',
     fontWeight:'bold',
@@ -154,7 +154,7 @@ function Home({post1,post2,post3,post4,post5,post6,post7,post8,post9}) {
 
       <div style={{
     position:'absolute',
-    right:'600px',
+    right:'550px',
     top:'200px',
     color: 'white',
     fontSize: '18px',
@@ -187,7 +187,7 @@ function Home({post1,post2,post3,post4,post5,post6,post7,post8,post9}) {
 
       <div style={{
         position:'absolute',
-        right:'600px',
+        right:'550px',
         top:'1200px',
     color: 'white',
     fontSize: '18px',
@@ -219,7 +219,7 @@ function Home({post1,post2,post3,post4,post5,post6,post7,post8,post9}) {
 
       <div style={{
         position:'absolute',
-        right:'600px',
+        right:'550px',
         top:'1700px',
     color: 'white',
     fontSize: '18px',
@@ -272,8 +272,8 @@ function Home({post1,post2,post3,post4,post5,post6,post7,post8,post9}) {
 }}>
     <div style={{
         position: 'relative',
-        top:'1800px',
-        left:'650px',
+        top:'1900px',
+        left:'450px',
         color: 'black',
         fontSize: '18px',
         width: '800px',
@@ -302,8 +302,8 @@ function Home({post1,post2,post3,post4,post5,post6,post7,post8,post9}) {
     </div>
     <div style={{
         position: 'relative',
-        top:'2100px',
-        left:'-210px',
+        top:'2200px',
+        left:'-400px',
         color: 'black',
         fontSize: '18px',
         width: '800px',
@@ -332,8 +332,8 @@ function Home({post1,post2,post3,post4,post5,post6,post7,post8,post9}) {
     </div>
     <div style={{
         position: 'relative',
-        top:'2450px',
-        left:'-1070px',
+        top:'2550px',
+        left:'-1250px',
         color: 'black',
         fontSize: '18px',
         height:'300px',

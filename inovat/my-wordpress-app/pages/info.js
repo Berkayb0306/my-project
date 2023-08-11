@@ -150,7 +150,7 @@ function Home({ post1,post2,post3,}) {
 
 
           <div style={{display: 'flex',justifyContent: 'center',alignItems: 'center',flexDirection: 'row',marginBottom: '20px',backgroundColor:'green',}}>
-          <img src="/images/ev.jpg" alt="ev" style={{position:'absolute',right:'650px',width: '250px',height: '190px',marginRight: '10px',marginBottom:'-15px',    marginLeft:'1000px',marginTop:'-10px',}} />
+          <img src="/images/ev.jpg" alt="ev" style={{position:'absolute',right:'500px',width: '250px',height: '190px',marginRight: '10px',marginBottom:'-15px',    marginLeft:'1000px',marginTop:'-10px',}} />
           <div>
           <div style={{color: 'black',fontSize: '16px',width: '700px',height:'150px',padding: '30px',backgroundColor: 'white',border: '2px solid rgb(37, 196, 37)',borderRadius: '50px',marginTop:'50px',marginBottom: '50px',marginRight:'490px',textAlign:'center',}}>
           <h2 style={{textAlign:'center',color:'black',fontWeight:'bold',fontSize:'27px',}}>Üretim </h2>

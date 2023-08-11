@@ -18,7 +18,7 @@ const Header = () => {
             <Link href="http://localhost:3000/solutions">Çözümler</Link>
           </li>
           <li>
-            <Link href="/about">Sürdürülebirlik</Link>
+            <Link href="http://localhost:3000/sustainability">Sürdürülebirlik</Link>
           </li>
           <li>
             <Link href="http://localhost:3000/contact">İletişim</Link>
